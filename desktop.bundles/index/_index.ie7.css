@@ -1,0 +1,60 @@
+/* index.ie.css begin */
+/* index.css begin */
+/* ../../desktop.blocks/b-interview/b-interview.css begin */
+.b-interview
+{
+}
+.b-interview__question:hover 
+{
+	cursor: pointer;
+}
+.b-interview__answer
+{
+	display: none;
+}
+.b-interview__answer_state_show 
+{
+	display: block;
+}
+/* ../../desktop.blocks/b-interview/b-interview.css end */
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	      box-sizing: border-box;
+}
+.page {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333333;
+	background-color: #ffffff;
+	margin: 0 auto;
+	max-width: 700px;
+}
+.b-greetings {
+	text-align: center;
+	padding: 30px;
+	margin-bottom: 30px;
+	font-size: 21px;
+	font-weight: 200;
+	line-height: 2.1428571435;
+	color: inherit;
+	background-color: #eeeeee;
+}
+
+.b-greetings .b-greetings__title {
+	line-height: 1;
+	color: inherit;
+}
+
+.b-greetings .b-greetings__content {
+	line-height: 1.4;
+}
+/* index.css end */
+
+
+/* index.ie.css end */
+

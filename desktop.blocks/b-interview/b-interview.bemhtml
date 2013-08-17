@@ -1,0 +1,14 @@
+block b-interview {
+    js: true,
+    content: [
+    	this.ctx.items.map(function(item) { 
+    		return { 
+    			elem: 'item', 
+    			content: [
+    				{elem: 'question', tag: 'h4', content:item.q},
+    				{elem: 'answer', tag: 'span', content:item.a} 
+    			]
+    		}
+    	})
+    ]
+}

@@ -1,0 +1,15 @@
+.b-interview
+{
+}
+.b-interview__question:hover 
+{
+	cursor: pointer;
+}
+.b-interview__answer
+{
+	display: none;
+}
+.b-interview__answer_state_show 
+{
+	display: block;
+}
