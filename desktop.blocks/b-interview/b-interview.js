@@ -5,8 +5,9 @@ modules.define('i-bem__dom', function(provide, DOM) {
             'js' : {
                 'inited' : function() {
                     this.bindTo(this.elem('question'), 'click', function(event) {
-                        console.log(event.currentTarget.nextSibling, this.elem('answer')[0]);
-                        this.toggleMod(event.currentTarget.nextSibling, 'state', 'show', '');
+                        var aa = jQuery(event.currentTarget.nextSibling);
+                        console.log(aa, this.elem('answer'));
+                        this.toggleMod(this.elem('answer'), 'state', 'show', '');
                     });
                 }
             }

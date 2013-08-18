@@ -19,7 +19,7 @@
             content: [
                 {
                     block: 'b-greetings', content: [
-                        {elem: 'title', tag: 'h1', content: 'Привет, Яндекс!'},
+                        {elem: 'title', tag: 'h1', content: 'Привет всем!'},
                         {elem: 'content', tag: 'p', content: 'На этой странице я попытаюсь ответить на все Ваши вопросы. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, b'}
                     ]
                 },
@@ -88,7 +88,7 @@
         {
             block: 'b-footer',
             content: [
-                {elem: 'content', tag: 'p', content: '© Руслан Исмагилов. Яндекс ШРИ 2013.'}
+                {elem: 'content', tag: 'p', content: '© Руслан Исмагилов.'}
             ]
         },
         { block: 'i-jquery', mods: { version: '1.8.3' } },
