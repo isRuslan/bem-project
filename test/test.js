@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var poly = require('..');
 
-describe('poly()', function () {
+describe('init sayHello', function () {
 	var sayHello;
 	before(function(done) {
 		sayHello = poly({
@@ -15,7 +15,15 @@ describe('poly()', function () {
 		done();
 	});
 
-  it('init', function () {
-    // expect(true).to.equal(false);
+  it('should say `Hello Empty!`', function () {
+    expect(sayHello()).to.equal('Hello Empty!');
+  });
+
+  it('should say `Hello Batman!`', function () {
+    expect(sayHello('Batman')).to.equal('Hello Batman!');
+  });
+
+  it('should say ', function () {
+    expect(sayHello('Superman', 'Robin')).to.equal('Hello Empty!');
   });
 });

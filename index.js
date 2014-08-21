@@ -7,7 +7,18 @@
  * @return {}
  */
 function Poly (opt) {
-	return opt;
+	// check
+	for (var i in opt) {
+		if (opt.hasOwnProperty(i)) {
+			if ( typeof opt[i] != "function" ) {
+				opt[i] = undefined;
+			}
+		}
+	}
+
+	return function() {
+    return opt[arguments.length].apply(this, arguments);
+  }
 }
 
 /**
