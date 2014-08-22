@@ -11,8 +11,10 @@ describe('init sayHello', function () {
 			1: function (name) {
 				return 'Hello ' + name + '!';
 			}
+		}, function () {
+			return 'default';
 		});
-		done();
+		done(); 
 	});
 
   it('should say `Hello Empty!`', function () {
@@ -23,7 +25,7 @@ describe('init sayHello', function () {
     expect(sayHello('Batman')).to.equal('Hello Batman!');
   });
 
-  it('should say ', function () {
-    expect(sayHello('Superman', 'Robin')).to.equal('Hello Empty!');
+  it('should call default', function () {
+    expect(sayHello('Superman', 'Robin')).to.equal('default');
   });
 });
