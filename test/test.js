@@ -6,7 +6,7 @@ describe('init sayHello', function () {
 	before(function(done) {
 		sayHello = poly({
 			0: function () {
-				return 'Hello Empty!';
+				return 'Hello Anonymous!';
 			},
 			1: function (name) {
 				return 'Hello ' + name + '!';
@@ -17,8 +17,8 @@ describe('init sayHello', function () {
 		done(); 
 	});
 
-  it('should say `Hello Empty!`', function () {
-    expect(sayHello()).to.equal('Hello Empty!');
+  it('should say `Hello Anonymous!`', function () {
+    expect(sayHello()).to.equal('Hello Anonymous!');
   });
 
   it('should say `Hello Batman!`', function () {
