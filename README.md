@@ -1,4 +1,4 @@
-# poly [![Build Status](https://secure.travis-ci.org/user/poly.png?branch=master)](http://travis-ci.org/user/poly)
+# poly [![Build Status](https://secure.travis-ci.org/isRuslan/poly.png?branch=master)](http://travis-ci.org/isRuslan/poly)
 
 > Simple way to implement polymorphism in javascript
 
