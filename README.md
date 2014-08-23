@@ -1,6 +1,6 @@
 # poly [![Build Status](https://secure.travis-ci.org/user/poly.png?branch=master)](http://travis-ci.org/user/poly)
 
-> Simple way to overload functions in javascript
+> Simple way to implement polymorphism in javascript
 
 ## Install
 
@@ -11,7 +11,7 @@ npm install --save poly
 ```
 
 ## Usage
-> There is only possible overload by arguments number
+> There is only possible overload function by arguments number
 
 ```
 var poly = require('poly');
@@ -32,6 +32,10 @@ sayHello('Haruki'); // 'Hello Haruki!';
 sayHello('Haruki', 'Murakami'); // 'Do I need to say Hello?';
 
 ```
+
+## TODO
+ - overload by type
+ - better implementation of `default` function
 
 ## Test
 
