@@ -1,8 +1,8 @@
 {
-  "name": "poly",
+  "name": "popo",
   "version": "0.1.0",
-  "homepage": "https://github.com/isRuslan/poly",
-  "bugs": "https://github.com/isRuslan/poly/issues",
+  "homepage": "https://github.com/isRuslan/popo",
+  "bugs": "https://github.com/isRuslan/popo/issues",
   "description": "Simple way to implement polymorphism in javascript",
   "author": {
     "name": "Ruslan Ismagilov",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/isRuslan/poly"
+    "url": "https://github.com/isRuslan/popo"
   },
   "main": "index.js",
   "devDependencies": {

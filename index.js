@@ -1,12 +1,12 @@
 'use strict';
 
 /**
- * @constructor Poly
+ * @constructor popo
  *
- * @param {}
- * @return {}
+ * @param {Object} opt Initialization object
+ * @return {Function} other `Default` function
  */
-function Poly (opt, other) {
+function popo (opt, other) {
 	var keys = [];
 
 	// check
@@ -19,7 +19,7 @@ function Poly (opt, other) {
 			}
 		}
 	}
-	// need to check arguments
+
 	return function() {
     return !!~keys.indexOf(arguments.length.toString())
     	? opt[arguments.length].apply(this, arguments)
@@ -30,4 +30,4 @@ function Poly (opt, other) {
 /**
  * Module exports
  */
-module.exports = Poly;
+module.exports = popo;

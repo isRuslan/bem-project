@@ -1,4 +1,4 @@
-# poly [![Build Status](https://secure.travis-ci.org/user/poly.png?branch=master)](http://travis-ci.org/user/poly)
+# popo [![Build Status](https://secure.travis-ci.org/user/popo.png?branch=master)](http://travis-ci.org/user/popo)
 
 > Simple way to implement polymorphism in javascript
 
@@ -7,16 +7,16 @@
 Install with npm:
 
 ```
-npm install --save poly
+npm install --save popo
 ```
 
 ## Usage
 > There is only possible overload function by arguments number
 
 ```
-var poly = require('poly');
+var popo = require('popo');
 
-var sayHello = poly({
+var sayHello = popo({
 	0: function () {
 		return 'Hello Anonymous!';
 	},

@@ -1,10 +1,10 @@
 var expect = require('chai').expect;
-var poly = require('..');
+var popo = require('..');
 
 describe('init sayHello', function () {
 	var sayHello;
 	before(function(done) {
-		sayHello = poly({
+		sayHello = popo({
 			0: function () {
 				return 'Hello Anonymous!';
 			},
