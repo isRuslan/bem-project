@@ -35,6 +35,7 @@ sayHello('Haruki', 'Murakami'); // 'Do I need to say Hello?';
 
 ## TODO
  - overload by type
+ - add browser support
  - better implementation of `default` function
 
 ## Test
