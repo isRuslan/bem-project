@@ -1,12 +1,28 @@
 {
   "name": "poly",
-  "description": "",
-  "version": "0.0.0",
-  "main": "poly.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/isRuslan/poly",
+  "bugs": "https://github.com/isRuslan/poly/issues",
+  "description": "Simple way to implement polymorphism in javascript",
+  "author": {
+    "name": "Ruslan Ismagilov",
+    "email": "is.ismagilov@gmail.com",
+    "url": "ruslan-ismagilov.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isRuslan/poly"
+  },
+  "main": "index.js",
   "devDependencies": {
     "chai": "*",
     "mocha": "*"
   },
+  "keywords": [
+    "polymorphism",
+    "overload",
+    "functions"
+  ],
   "scripts": {
     "test": "mocha --reporter spec"
   }
