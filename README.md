@@ -1,4 +1,4 @@
-# popo [![Build Status](https://secure.travis-ci.org/user/popo.png?branch=master)](http://travis-ci.org/user/popo)
+# popo [![Build Status](https://secure.travis-ci.org/isRuslan/popo.png?branch=master)](http://travis-ci.org/isRuslan/popo)
 
 > Simple way to implement polymorphism in javascript
 
@@ -35,6 +35,7 @@ sayHello('Haruki', 'Murakami'); // 'Do I need to say Hello?';
 
 ## TODO
  - overload by type
+ - add browser support
  - better implementation of `default` function
 
 ## Test
