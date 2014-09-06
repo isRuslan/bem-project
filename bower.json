@@ -1,0 +1,25 @@
+{
+  "name": "popo",
+  "main": "index.js",
+  "version": "0.2.0",
+  "homepage": "https://github.com/isRuslan/popo",
+  "authors": [{
+    "name": "Ruslan Ismagilov",
+    "email": "is.ismagilov@gmail.com",
+    "url": "ruslan-ismagilov.ru"
+  }],
+  "description": "Simple way to implement polymorphism in javascript",
+  "keywords": [
+    "polymorphism",
+    "overload",
+    "functions"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
