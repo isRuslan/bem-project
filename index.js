@@ -1,4 +1,8 @@
 'use strict';
+/**
+ * Welcome to the Popo!
+ */
+(function (exports) {
 
 /**
  * @constructor popo
@@ -31,3 +35,5 @@ function popo (opt, other) {
  * Module exports
  */
 module.exports = popo;
+
+})(typeof module.exports === 'undefined' ? this['popo'] = {} : module.exports);
