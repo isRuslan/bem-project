@@ -10,8 +10,16 @@ Install with npm:
 npm install --save popo
 ```
 
+Install with bower:
+
+```
+bower install --save popo
+```
+
 ## Usage
 > There is only possible overload function by arguments number
+
+`Node.js`
 
 ```
 var popo = require('popo');
@@ -30,8 +38,22 @@ var sayHello = popo({
 sayHello(); // 'Hello Anonymous!';
 sayHello('Haruki'); // 'Hello Haruki!';
 sayHello('Haruki', 'Murakami'); // 'Do I need to say Hello?';
+```
+`Browser`
 
 ```
+popo({
+	0: function () {
+		return 'Hello Anonymous!';
+	},
+	1: function (name) {
+		return 'Hello ' + name + '!';
+	}
+}, function otherWay () {
+	return 'Do I need to say Hello?';
+});
+```
+
 
 ## TODO
  - overload by type
