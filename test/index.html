@@ -1,0 +1,17 @@
+<html>	
+<script src="../bower_components/popo/index.js"></script>
+<script>
+	var sayHello = popo({
+		0: function () {
+			return 'Hello Anonymous!';
+		},
+		1: function (name) {
+			return 'Hello ' + name + '!';
+		}
+	}, function () {
+		return 'default';
+	});
+	console.log( sayHello() ); 
+	console.log( sayHello('Batman') );
+</script>
+</html>
