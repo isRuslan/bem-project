@@ -4,16 +4,15 @@ var popo = require('..');
 describe('init sayHello', function () {
 	var sayHello;
 	before(function(done) {
-		sayHello = popo({
-			0: function () {
-				return 'Hello Anonymous!';
-			},
-			1: function (name) {
-				return 'Hello ' + name + '!';
-			}
-		}, function () {
-			return 'default';
-		});
+		sayHello = popo(function () {
+        return 'Hello Anonymous!';
+      },
+      function (name) {
+        return 'Hello ' + name + '!';
+      }).other(function () {
+        return [].slice(arguments);
+      });
+
 		done(); 
 	});
 
@@ -26,6 +25,6 @@ describe('init sayHello', function () {
   });
 
   it('should call default', function () {
-    expect(sayHello('Superman', 'Robin')).to.equal('default');
+    expect(sayHello('Superman', 'Robin')).to.equal(['Superman', 'Robin']);
   });
 });
