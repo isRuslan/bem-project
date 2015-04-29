@@ -10,25 +10,30 @@
 	 * @param {Object} opt Initialization object
 	 * @return {Function} other `Default` function
 	 */
-	function popo (opt, other) {
-		var keys = [];
+	function popo () {
+    var args = [].slice.call(arguments, 0)
+		  , keys = {}, i = 0, func;
 
 		// check
-		for (var i in opt) {
-			if (opt.hasOwnProperty(i)) {
-				if ( typeof opt[i] != "function" ) {
-					opt[i] = undefined;
-				} else {
-					keys.push(i);
-				}
-			}
+		for (;func = args[i++];) {
+      if ( typeof func === 'function' ) {
+        keys[func.length] = func;
+      }
 		}
 
-		return function() {
-	    return !!~keys.indexOf(arguments.length.toString())
-	    	? opt[arguments.length].apply(this, arguments)
-	    	: other.apply(this, arguments);
+
+		function result () {
+	    return arguments.length in keys
+	    	? keys[arguments.length].apply(this, arguments)
+	    	: this.other.apply(this, arguments);
 	  }
+
+
+    result.other = function (fn) {
+      return typeof fn === 'function' ? fn : function () { };
+    };
+
+    return result;
 	}
 
 	/**
