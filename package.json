@@ -1,13 +1,12 @@
 {
   "name": "popo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/isRuslan/popo",
   "bugs": "https://github.com/isRuslan/popo/issues",
-  "description": "Simple way to implement polymorphism in javascript",
+  "description": "Stupid way to implement polymorphism in javascript",
   "author": {
     "name": "Ruslan Ismagilov",
-    "email": "is.ismagilov@gmail.com",
-    "url": "ruslan-ismagilov.ru"
+    "email": "is.ismagilov@gmail.com"
   },
   "repository": {
     "type": "git",
